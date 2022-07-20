@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Urbanist:wght@100&display=swap');
+
+
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    --gris: rgb(177,177,177);
+}
+
+body{
+    background-color: black;
+}
+
+.topnav{
+    float: right;
+}
+
+.topnav a{
+    font-size: 25px;
+    text-decoration: none;
+    display: none;
+}
+
+.topnav a.icono{
+    margin: 30px;
+    float: right;
+    display: block;
+    width: auto;
+}
+
+.punto{
+    font-family: 'Monoton', cursive;
+background-color: white;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+margin: 1px;
+float: left;
+}
+
+.topnav.activar{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    z-index: +2;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+
+.topnav.activar a{
+display: block;
+text-align: left;
+text-decoration: none;
+padding: 20px;
+}
+
+
+.topnav.activar .icono{
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+}
+
+.topnav.activar .icono .punto:nth-child(2), .topnav.activar .icono .punto:nth-child(3){
+
+    margin-left: 5px;
+    transition: all 0.6s;
+    background-color: var(--gris);
+}
+
+.topnav.activar a:hover{
+    font-family: 'Monoton', cursive;
+color: var(--gris);
+}
+
+.logo h1{
+font-size: 25px;
+margin: 20px;
+font-family:  'Monoton', cursive;
+position: absolute;
+}
+
+
+.seccion-cargando{
+    margin-top: 350px;
+    width: 10%;
+    margin-left: 45%;
+    position: absolute;
+text-align: center;
+font-size: 25px;
+animation: remover 20s;
+opacity: 0;
+}
+
+@keyframes remover {
+    0%{
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    16%{
+        opacity: 0;
+    }
+}
+
+.top-fotos{
+    text-align: center;
+    margin-top: 135px;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 1;
+}
+
+.top-fotos img{
+    height: 480px;
+transform: rotate3d(-285, 85,30, 90deg);
+}
+
+
+
+.top-fotos img:nth-child(1){
+opacity: 0;
+animation: revelar 6.5s;
+animation-delay: 1s;
+}
+
+.top-fotos img:nth-child(2){
+    opacity: 0;
+    animation: revelar 6.5s;
+    animation-delay: 2s;
+    }
+    
+.top-fotos img:nth-child(3){
+        opacity: 0;
+        animation: revelar 6.5s;
+        animation-delay: 3s;
+        }
+
+        @keyframes revelar {
+            0%{
+                opacity: 0;
+            }
+            5%{
+                opacity: 0;
+            }
+            10%{
+                opacity: 0;
+            }
+            30%{
+                opacity: 0;
+                transform: rotate3d(-285, 85,30, 90deg);
+            }
+            45%{
+                opacity: 1;
+                transform: none;
+            }
+            90%{
+                opacity: 1;
+                transform: none;
+            }
+            100%{
+                opacity: 0;
+                transform: rotate3d(-285, 85,30, 90deg);
+            }
+        }
+
+
+        .titulo{
+            margin-top: 300px;
+            position: absolute;
+            width: 80%;
+            margin-left: 10%;
+        }
+        
+.titulo h1{
+    font-family:  'Monoton', cursive;
+font-size: 90px;
+animation: mostrar 15s;
+animation-delay: 0s;
+opacity: 1;
+}
+
+.subtitulo{
+    font-size: 25px;
+    animation: mostrar 16.6s;
+    animation-delay: 0s;
+    opacity: 1;
+}
+
+@keyframes mostrar {
+    0%{
+        opacity: 0;
+    }
+
+    69%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+        transform: rotate3d(-285, 85,30, 90deg);
+    }
+    80%{
+        transform: none;
+        opacity: 1;
+    }
+
+
+
+}
+
+.top{
+    text-align: center;
+    justify-content: center;
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(0, 0, 0, 0.605)),
+    url("./images/topbk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fondo 13.6s;
+    animation-delay: 0s;
+}
+
+@keyframes fondo {
+    0%{
+        height: 750px;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        url("./images/topbk.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+
+    80%{
+        height: 750px;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        url("./images/topbk.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    100%{
+        height: 750px;
+        background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(0, 0, 0, 0.605)),
+        url("./images/topbk.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+}
+
+.info{
+    background: linear-gradient(rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.885)),
+    url("./images/bw2.jpg");
+    height: 750px;
+    background-size: cover;
+}
+
+.info p{
+    padding: 280px;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.viajes{
+    background: linear-gradient(rgba(0, 0, 0, 0.496), rgba(0, 0, 0, 0.605)),
+    url("./images/travel5.jpg");
+    height: 750px;
+    background-size: cover;
+}
+
+
+.viajes p{
+    color: var(--gris);
+    padding-top: 150px;
+    font-size: 120px;
+text-align: center;
+}
+
+.viajes span{
+    font-family:  'Monoton', cursive;
+    color: white;
+
+}
+
+.redes-sociales .seccion{
+height: 370px;
+float: left;
+width: 33.33%;
+padding:20px;
+cursor: pointer;
+}
+
+.redes-sociales .contenedor{
+    height: 260px;
+    overflow: hidden;
+}
+
+.redes-sociales .contenedor img{
+    width: 100%;
+    height: auto;
+}
+
+
+.galleria{
+    display: none;
+    z-index: +3;
+}
+
+.galleria.desplegar{
+    position: absolute;
+    width: 100%;
+    top:0px;
+display: block;
+background-color: rgb(17, 17, 17);
+animation: mover 1.5s;
+}
+
+@keyframes mover {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        width: 100%;
+        opacity:1;
+    }
+}
+
+.galleria .foto{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.foto img{
+    height: 500px;
+    width: auto;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco, .seis{
+    animation: fotos 32s;
+    animation-delay: 2s;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.dos{
+    animation-delay: 7s;
+}
+
+.tres{
+    animation-delay:12s;
+}
+
+.cuatro{
+    animation-delay:17s;
+}
+
+.cinco{
+    animation-delay:23s;
+}
+
+.seis{
+    animation-delay:28s;
+}
+
+@keyframes fotos {
+    0%{
+opacity: 0;
+    }
+    10%{
+        opacity:1; 
+    }
+    17%{
+        opacity: 0; 
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.cerrar{
+    font-size: 50px;
+    position: fixed;
+    cursor: pointer;
+right: 15px;
+}
+
+.cerrar:hover{
+    transform: scale(1.1);
+}
+
+span{
+    cursor: pointer;
+}
+
+
+

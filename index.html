@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+     <!--COUNTER-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+     <!--END-->
+          <!--AOS-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Pagina web de Fotografia</title>
+</head>
+<body>
+<nav>
+
+<div class="logo">
+    <H1>OLIVER 007</H1>
+</div>
+
+<div class="topnav" id="miTopnav">
+<a href="#" class="icono" onclick="MostrarMenu()">
+<div class="punto"></div>
+<div class="punto"></div>
+<div class="punto"></div>
+</a>
+<a href="#" onclick="MostrarGalleria()">GALLERIA</a>
+<a href="#info">INFO</a>
+<a href="#contacto">CONTACTO</a>
+<a href="#contacto">REDES SOCIALES</a>
+</div>
+</nav>
+
+<script>
+function MostrarMenu() {
+var x = document.getElementById("miTopnav");
+if (x.className === "topnav") {
+    x.className += " activar";
+}
+else {
+    x.className = "topnav"
+}
+}
+
+</script>
+
+<div class="top">
+
+<div class="seccion-cargando">
+    <div class="cargando">Cargando</div>
+<div class="contador">100</div>%
+</div>
+
+<div class="top-fotos">
+<img src="./images/pexels-roman-odintsov-4553618.jpg" alt="">
+<img src="./images/pexels-ata-ebem-10831416.jpg" alt="">
+<img src="./images/img3.jpg" alt="">
+</div>
+
+
+<div class="titulo">
+    <h1>FOTOGRAFIAS</h1>
+
+
+<div class="subtitulo">
+    MAS INFO <br>
+    &#x2193;
+</div>
+</div>
+
+
+</div>
+
+<div class="info" id="info" data-aos="zoom-in">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Expedita facilis consequatur earum impedit fugit aperiam ipsum, 
+labore quasi consequuntur non nulla veniam veritatis, voluptatum 
+asperiores laborum excepturi, 
+ut voluptas reprehenderit. Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. Architecto quasi numquam rerum 
+at ad quia dolor fugit officia minima reiciendis id iure illo, 
+obcaecati, ipsa possimus tempora voluptatum, 
+nihil blanditiis?
+</p>
+</div>
+
+<div class="viajes">
+    <p data-aos="fade-down">Descubre nuestra <br> seccion de<br>
+    <span onclick="MostrarGalleria()">VIAJES</span> </p>
+</div>
+
+<center>
+    <p style="font-size:80px; font-family: 'Monoton', cursive; margin-top: 70px;">CONTACT</p>
+  <P style="font-size: 25px;"> &#128231; yersonoliverf@gmail.com</P>
+</center>
+
+<center>
+<div class="redes-sociales" id="contacto">
+    <p style="font-size:80px; font-family: 'Monoton', cursive; margin-top: 70px;">REDES SOCIALES</p>
+
+<div class="seccion">
+    <div class="contenedor" data-aos="zoom-in">
+        <img src="./images/instagram.jpg" alt="">
+    </div>
+    <br>
+    INSTAGRAM
+</div>
+
+<div class="seccion">
+    <div class="contenedor" data-aos="zoom-in">
+        <img src="./images/facebook.jpg" alt="">
+    </div>
+    <br>
+    FACEBOOK
+</div>
+
+<div class="seccion">
+    <div class="contenedor" data-aos="zoom-in">
+        <img src="./images/pinterest.jpeg" alt="">
+    </div>
+    <br>
+    PINTEREST
+</div>
+
+
+
+</div>
+
+
+
+
+</center>
+
+
+<center>
+<div class="galleria" id="Portafolio">
+<div class="cerrar" onclick="MostrarGalleria()">X</div>
+    <!--EDITORIAL-->
+<div style="height: 750px;">
+<p style="font-size:80px; font-family: 'Monoton', cursive; padding: 30px;">EDITORIAL</p>
+
+<div class="foto uno">
+    <img src="./images/editorial1.jpg" alt="">
+</div>
+
+<div class="foto dos">
+    <img src="./images/editorial2.jpg" alt="">
+</div>
+<div class="foto tres">
+    <img src="./images/editorial3.jpg" alt="">
+</div>
+<div class="foto cuatro">
+    <img src="./images/editorial4.jpg" alt="">
+</div>
+<div class="foto cinco">
+    <img src="./images/editorial5.jpg" alt="">
+</div>
+<div class="foto seis">
+    <img src="./images/editorial6.jpg" alt="">
+</div>
+
+
+
+
+
+
+</div>
+
+   <!--BLANCO Y NEGRO-->
+<div style="height: 750px;">
+    <p style="font-size:80px; font-family: 'Monoton', cursive; padding: 30px;">BLANCO Y NEGRO</p>
+    
+    <div class="foto uno">
+        <img src="./images/bw1.jpg" alt="">
+    </div>
+    
+    <div class="foto dos">
+        <img src="./images/bw2.jpeg" alt="">
+    </div>
+    <div class="foto tres">
+        <img src="./images/bw2.jpg" alt="">
+    </div>
+    <div class="foto cuatro">
+        <img src="./images/bw4.jpg" alt="">
+    </div>
+    <div class="foto cinco">
+        <img src="./images/bw5.jpg" alt="">
+    </div>
+    <div class="foto seis">
+        <img src="./images/bw6.jpeg" alt="">
+    </div>
+    
+    
+    
+    
+    
+    
+    </div>
+
+       <!--VIAJES-->
+    <div style="height: 750px;">
+        <p style="font-size:80px; font-family: 'Monoton', cursive; padding: 30px;">VIAJES</p>
+        
+        <div class="foto uno">
+            <img src="./images/travel1.jpg" alt="">
+        </div>
+        
+        <div class="foto dos">
+            <img src="./images/travel2.jpg" alt="">
+        </div>
+        <div class="foto tres">
+            <img src="./images/travel3.jpg" alt="">
+        </div>
+        <div class="foto cuatro">
+            <img src="./images/travel4.jpg" alt="">
+        </div>
+        <div class="foto cinco">
+            <img src="./images/travel5.jpg" alt="">
+        </div>
+        <div class="foto seis">
+            <img src="./images/travel6.jpg" alt="">
+        </div>
+        
+        
+        
+        
+        
+        
+        </div>
+
+           <!--RETRATOS-->
+        <div style="height: 750px;">
+            <p style="font-size:80px; font-family: 'Monoton', cursive; padding: 30px;">RETRATOS</p>
+            
+            <div class="foto uno">
+                <img src="./images/portrait1.jpg" alt="">
+            </div>
+            
+            <div class="foto dos">
+                <img src="./images/portrait2.jpg" alt="">
+            </div>
+            <div class="foto tres">
+                <img src="./images/portrait3.jpg" alt="">
+            </div>
+            <div class="foto cuatro">
+                <img src="./images/portrait4.jpg" alt="">
+            </div>
+            <div class="foto cinco">
+                <img src="./images/portrait5.jpg" alt="">
+            </div>
+            <div class="foto seis">
+                <img src="./images/portrait6.jpg" alt="">
+            </div>
+            
+            
+            
+            
+            
+            
+            </div>
+            <br><br><br>
+</div>
+
+
+
+
+</center>
+
+<script>
+
+    function MostrarGalleria() {
+        var x = document.getElementById("Portafolio");
+if (x.className === "galleria") {
+    x.className += " desplegar";
+}
+else {
+    x.className = "galleria"
+}
+    }
+
+
+
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+     $('.contador').counterUp({
+      delay: 13,
+      time: 1600
+     });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+  </script>
+</body>
+</html>
